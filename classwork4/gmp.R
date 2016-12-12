@@ -8,7 +8,7 @@ estimate.scaling.exponent <- function(a, y0=6611, response=gmp$pcgmp,
   for (iteration in 1:maximum.iterations) {
     deriv <- (mse(a+deriv.step) - mse(a))/deriv.step
     a <- a - step.scale*deriv
-    if (abs(deriv) <= stopping.deriv) { break() }
+    if (abs(deriv) <= stopping.deriv) { break() } # error. missing value where TRUE/FALSE needed
   }
   fit <- list(a=a,iterations=iteration,
               converged=(iteration < maximum.iterations))
