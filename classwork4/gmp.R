@@ -1,5 +1,5 @@
-#Загрузите данные в датафрейм. Адрес: https://raw.githubusercontent.com/SergeyMirvoda/da2016/master/classwork4/gmp.dat 
-gmp <- ...
+#Загрузите данные в датафрейм. Адрес: https://raw.githubusercontent.com/SergeyMirvoda/da2016/master/classwork4/gmp.dat
+gmp <- read.table("gmp.dat", sep=",", header=TRUE)
 
 estimate.scaling.exponent <- function(a, y0=6611, response=gmp$pcgmp,
                                         predictor = gmp$pop, maximum.iterations=100, deriv.step = 1/100,
