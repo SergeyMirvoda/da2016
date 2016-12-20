@@ -1,11 +1,11 @@
 predict.plm <- function(obj, dt) {
-  # ÐŸÑ€Ð¾Ð²ÐµÑ€Ð¸Ð¼, ÐµÑÑ‚ÑŒ Ð»Ð¸ Ð½ÑƒÐ¶Ð½Ñ‹Ðµ Ð½Ð°Ð¼ ÐºÐ¾Ð¼Ð¿Ð¾Ð½ÐµÐ½Ñ‚Ñ‹ Ð² Ð¾Ð±ÑŠÐµÐºÑ‚Ðµ
+  # Ïðîâåðèì, åñòü ëè íóæíûå íàì êîìïîíåíòû â îáúåêòå
   stopifnot("a" %in% names(obj), "y0" %in% names(obj))
   a <- obj$a
   y0 <- obj$y0
-  # ÐŸÑ€Ð¾Ð²ÐµÑ€ÐºÐ° Ð²Ñ…Ð¾Ð´Ð½Ñ‹Ñ… Ð´Ð°Ð½Ð½Ñ‹Ñ…
+  # Ïðîâåðêà âõîäíûõ äàííûõ
   stopifnot(is.numeric(a),length(a)==1)
   stopifnot(is.numeric(y0),length(y0)==1)
   stopifnot(is.numeric(dt))
-  return(y0*dt^a) # Ð’Ñ‹Ñ‡Ð¸ÑÐ»Ð¸Ð¼ Ð¸ Ð²Ñ‹Ð¹Ð´ÐµÐ¼
+  return(y0*dt^a) # Âû÷èñëèì è âûéäåì
 }
