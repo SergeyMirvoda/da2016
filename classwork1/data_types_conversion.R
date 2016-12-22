@@ -1,13 +1,14 @@
-# РџСЂРѕРІРµСЂРєР° Рё РїСЂРµРѕР±СЂР°Р·РѕРІР°РЅРёРµ С‚РёРїРѕРІ is.XYS as.XYZ 
+# Проверка и преобразование типов is.XYS as.XYZ 
 
-# РџСЂРёСЃРІРѕР№С‚Рµ Р·РЅР°С‡РµРЅРёРµ 33.3 РїРµСЂРµРјРµРЅРЅРѕР№ my_numeric
-my_numeric <- 
+# Присвойте значение 33.3 переменной my_numeric
+my_numeric <- 33.3 
 
-# РЈСЃС‚Р°РЅРѕРІРёС‚Рµ Р·РЅР°С‡РµРЅРёРµ my_character РІ "33"
-my_character <- "РџСЂРёРІРµС‚"
-# РџСЂРѕРІРµСЂСЊС‚Рµ С‚РёРї РґР°РЅРЅС‹С… my_character
+# Установите значение my_character в "33"
+my_character <- "33"
+# Проверьте тип данных my_character
 is.numeric(my_character)
-# РџСЂРµРѕР±СЂР°Р·СѓР№С‚Рµ my_character РІ С‡РёСЃР»Рѕ РїСЂРё РїРѕРјРѕС‰Рё С„СѓРЅРєС†РёРё as.numeric Рё Р·Р°РїРёС€РёС‚Рµ РІ РїРµСЂРµРјРµРЅРЅСѓСЋ my_numeric_character
-
-my_numeric_character<-
-# РџСЂРµР±СЂР°Р·СѓР№С‚Рµ СЃСѓРјРјСѓ my_numeric Рё my_numeric_character Рё РІС‹РІРµРґРёС‚Рµ РЅР° СЌРєСЂР°РЅ
+# Преобразуйте my_character в число при помощи функции as.numeric и запишите в переменную my_numeric_character
+my_character <- as.numeric(my_character)
+my_numeric_character<-my_character
+# Пребразуйте сумму my_numeric и my_numeric_character и выведите на экран
+print(my_numeric + my_numeric_character)

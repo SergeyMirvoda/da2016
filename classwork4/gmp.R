@@ -1,5 +1,5 @@
-#Р—Р°РіСЂСѓР·РёС‚Рµ РґР°РЅРЅС‹Рµ РІ РґР°С‚Р°С„СЂРµР№Рј. РђРґСЂРµСЃ: https://raw.githubusercontent.com/SergeyMirvoda/da2016/master/classwork4/gmp.dat 
-gmp <- ...
+#Загрузите данные в датафрейм. Адрес: https://raw.githubusercontent.com/SergeyMirvoda/da2016/master/classwork4/gmp.dat
+gmp <- read.table("gmp.dat", sep=",", header=TRUE)
 
 estimate.scaling.exponent <- function(a, y0=6611, response=gmp$pcgmp,
                                         predictor = gmp$pop, maximum.iterations=100, deriv.step = 1/100,
@@ -8,18 +8,18 @@ estimate.scaling.exponent <- function(a, y0=6611, response=gmp$pcgmp,
   for (iteration in 1:maximum.iterations) {
     deriv <- (mse(a+deriv.step) - mse(a))/deriv.step
     a <- a - step.scale*deriv
-    if (abs(deriv) <= stopping.deriv) { break() }
+    if (abs(deriv) <= stopping.deriv) { break() } # error. missing value where TRUE/FALSE needed
   }
   fit <- list(a=a,iterations=iteration,
               converged=(iteration < maximum.iterations))
   return(fit)
 }
-#РџСЂРёРјРµСЂ РІС‹Р·РѕРІР° СЃ РЅР°С‡Р°Р»СЊРЅС‹Рј Р·Р°РЅС‡РµРЅРёРµРј a
+#Пример вызова с начальным занчением a
 estimate.scaling.exponent(0.15)
 
-#РЎ РїРѕРјРѕС€СЊСЋ РїРѕР»СѓС‡РµРЅРЅРѕРіРѕ РєРѕСЌС„С„РёС†РёРµРЅС‚Р° РїРѕСЃС‚СЂРѕР№С‚Рµ РєСЂРёРІСѓСЋ (С„СѓРЅРєС†РёСЏ curve) Р·Р°РІРёСЃРёРјРѕСЃС‚Рё
+#С помошью полученного коэффициента постройте кривую (функция curve) зависимости
 
-#РЈРґР°Р»РёС‚Рµ С‚РѕС‡РєСѓ РёР· РЅР°Р±РѕСЂР° РёСЃС…РѕРґРЅС‹С… РґР°РЅРЅС‹С… СЃР»СѓС‡Р°Р№РЅС‹Рј РѕР±СЂР°Р·РѕРј, РєР°Рє РёР·РјРµРЅРёР»РѕСЃСЊ СЃС‚Р°С‚РёСЃС‚РёС‡РµСЃРєР°СЏ РѕС†РµРЅРєР° РєРѕСЌС„С„РёС†РёРµРЅС‚Р° a?
+#Удалите точку из набора исходных данных случайным образом, как изменилось статистическая оценка коэффициента a?
 
-#Р—Р°РїСѓСЃС‚РёС‚Рµ РѕС†РµРЅРєСѓ РЅРµСЃРєРѕР»СЊРєРѕ СЂР°Р· СЃ СЂР°Р·РЅС‹С… СЃС‚Р°СЂС‚РѕРІС‹С… С‚РѕС‡РµРє. РљР°Рє РёР·РјРµРЅРёР»РѕСЃСЊ Р·РЅР°С‡РµРЅРёРµ a?
+#Запустите оценку несколько раз с разных стартовых точек. Как изменилось значение a?
 
