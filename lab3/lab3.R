@@ -23,8 +23,8 @@ worths = as.double(gsub(",", ".", regmatches(worth, regexpr("\\d+(\\.|,)?\\d*", 
 worths
 df = data.frame(rich, worths)
 names(df) = c("Name", "Worth")
-nrow(df)
 df
+nrow(df)
 richest = df[df$Worth == max(df$Worth),]
 richest
 nrow(richest)

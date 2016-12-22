@@ -1,7 +1,15 @@
-#' ---
-#' author: "Zhenyok Nazedwox"
-#' ---
+---
+title: "lab1"
+author: "Zhenyok Nazedwox"
+date: "December 23, 2016"
+output: html_document
+---
 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
 # -------------------------------------------------- Task 1 --------------------------------------------------
 # 1
 exp.1 = rexp(n = 200)
@@ -99,3 +107,5 @@ huge.exp.1.mean
 huge.exp.1.sd
 huge.exp.1.squares.mean
 huge.exp.1.squares.sd
+
+```

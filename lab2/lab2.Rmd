@@ -1,7 +1,15 @@
-#' ---
-#' author: "Zhenyok Nazedwox"
-#' ---
+---
+title: "lab2"
+author: "Zhenyok Nazedwox"
+date: "December 23, 2016"
+output: html_document
+---
 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
 # Source data
 library(MASS)
 data(Cars93)
@@ -84,3 +92,5 @@ factory.run <- function (o.cars=30, o.trucks=20) {
 # f4 = factory.run()
 # Функция вызвана со значениями по умолчанию, то есть o.cars=1, o.trucks=1
 # Результат всегда разный, так как есть ветка со случайной величиной
+
+```
