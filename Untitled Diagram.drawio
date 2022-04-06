@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-04-06T10:02:06.200Z" agent="5.0 (Windows)" etag="sFIajVK03_9RGzFs63oW" version="17.4.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-04-06T10:02:23.327Z" agent="5.0 (Windows)" etag="eLEXV4l6bkw948GyMDoz" version="17.4.0" type="github">
   <diagram id="IThwTLLGba7Q0fqvW59s" name="Page-1">
     <mxGraphModel dx="1422" dy="741" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -7,7 +7,7 @@
         <mxCell id="mTSeAWRRw6Q3uPcNTbIo-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;" parent="1" source="mTSeAWRRw6Q3uPcNTbIo-1" target="mTSeAWRRw6Q3uPcNTbIo-2" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="mTSeAWRRw6Q3uPcNTbIo-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="mTSeAWRRw6Q3uPcNTbIo-1" target="mTSeAWRRw6Q3uPcNTbIo-5" edge="1">
+        <mxCell id="mTSeAWRRw6Q3uPcNTbIo-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;" parent="1" source="mTSeAWRRw6Q3uPcNTbIo-1" target="mTSeAWRRw6Q3uPcNTbIo-5" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="ITM5sbHz8d6MqF41jEeu-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=3;" edge="1" parent="1" source="mTSeAWRRw6Q3uPcNTbIo-1" target="ITM5sbHz8d6MqF41jEeu-1">
@@ -76,7 +76,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="ITM5sbHz8d6MqF41jEeu-1" value="(3) idoc" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="610" y="160" width="120" height="60" as="geometry" />
+          <mxGeometry x="610" y="170" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="ITM5sbHz8d6MqF41jEeu-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;" edge="1" parent="1" source="ITM5sbHz8d6MqF41jEeu-3" target="mTSeAWRRw6Q3uPcNTbIo-7">
           <mxGeometry relative="1" as="geometry" />
@@ -88,7 +88,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="ITM5sbHz8d6MqF41jEeu-6" value="Только idoc для немаркированных товаров" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;" vertex="1" parent="1">
-          <mxGeometry x="880" y="140" width="120" height="100" as="geometry" />
+          <mxGeometry x="880" y="150" width="120" height="100" as="geometry" />
         </mxCell>
         <mxCell id="ITM5sbHz8d6MqF41jEeu-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=none;endFill=0;" edge="1" parent="1" source="ITM5sbHz8d6MqF41jEeu-8" target="ITM5sbHz8d6MqF41jEeu-3">
           <mxGeometry relative="1" as="geometry" />
@@ -100,7 +100,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="ITM5sbHz8d6MqF41jEeu-9" value="Генератор&lt;br&gt;УПД из idoc на &lt;br&gt;основе idocconverter&#39;a" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
-          <mxGeometry x="444" y="150" width="120" height="80" as="geometry" />
+          <mxGeometry x="444" y="160" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="ITM5sbHz8d6MqF41jEeu-16" value="Выходной XML требуемого формата, пригодный для загрузки в выбранную систему ЭДО" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.document2;whiteSpace=wrap;size=0.25;" vertex="1" parent="1">
           <mxGeometry x="190" y="690" width="150" height="130" as="geometry" />
