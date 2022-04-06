@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-04-06T10:02:23.327Z" agent="5.0 (Windows)" etag="eLEXV4l6bkw948GyMDoz" version="17.4.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-04-06T14:11:04.204Z" agent="5.0 (Windows)" etag="0pD5giQx6y24f5K4ZE9N" version="17.4.0" type="github">
   <diagram id="IThwTLLGba7Q0fqvW59s" name="Page-1">
     <mxGraphModel dx="1422" dy="741" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -88,13 +88,13 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="ITM5sbHz8d6MqF41jEeu-6" value="Только idoc для немаркированных товаров" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;" vertex="1" parent="1">
-          <mxGeometry x="880" y="150" width="120" height="100" as="geometry" />
+          <mxGeometry x="800" y="150" width="120" height="100" as="geometry" />
         </mxCell>
         <mxCell id="ITM5sbHz8d6MqF41jEeu-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=none;endFill=0;" edge="1" parent="1" source="ITM5sbHz8d6MqF41jEeu-8" target="ITM5sbHz8d6MqF41jEeu-3">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="ITM5sbHz8d6MqF41jEeu-8" value="Данные для УПД в формате бухгалтерии" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;" vertex="1" parent="1">
-          <mxGeometry x="920" y="255" width="120" height="100" as="geometry" />
+          <mxGeometry x="880" y="255" width="120" height="100" as="geometry" />
         </mxCell>
         <mxCell id="ITM5sbHz8d6MqF41jEeu-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;" edge="1" parent="1" source="ITM5sbHz8d6MqF41jEeu-9" target="mTSeAWRRw6Q3uPcNTbIo-7">
           <mxGeometry relative="1" as="geometry" />
